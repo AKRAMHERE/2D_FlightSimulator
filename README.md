@@ -66,7 +66,7 @@ Implements a **two-loop control architecture**, mirroring real aircraft autopilo
 
 * PID controller generates pitch command:
 
-  (\theta = K_p e + K_i \int e dt + K_d \frac{de}{dt})
+  (theta = K_p*e + K_i*integration( e dt) + K_d*{de}/{dt})
 
 * Error: (e = h_{ref} - h)
 
