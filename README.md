@@ -22,16 +22,16 @@ Defined in:
 
 **Core dynamics**
 
-* Lift: (L = \frac{1}{2} \rho V^2 S C_L)
-* Drag: (D = \frac{1}{2} \rho V^2 S C_D)
-* (C_L = 2\pi \alpha)
-* (C_D = C_{D0} + k \alpha^2)
+* Lift: `(L = \frac{1}{2} \rho V^2 S C_L)`
+* Drag: `(D = \frac{1}{2} \rho V^2 S C_D)`
+* `(C_L = 2\pi \alpha)`  
+* `(C_D = C_{D0} + k \alpha^2)`
 
 **Equations of motion**
 
-* (\dot{V} = \frac{T\cos\alpha - D - mg\sin\gamma}{m})
-* (\dot{\gamma} = \frac{L + T\sin\alpha - mg\cos\gamma}{mV})
-* (\dot{h} = V \sin\gamma)
+* `(\dot{V} = \frac{T\cos\alpha - D - mg\sin\gamma}{m})`
+* `(\dot{\gamma} = \frac{L + T\sin\alpha - mg\cos\gamma}{mV})`
+* `(\dot{h} = V \sin\gamma)`
 
 **Numerical integration**
 
