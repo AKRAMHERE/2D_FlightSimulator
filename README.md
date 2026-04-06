@@ -1,6 +1,6 @@
 # 2D Flight Simulator (Aircraft Longitudinal Dynamics + Autopilot)
 
-A physics-based 2D flight simulator implementing longitudinal aircraft dynamics, real-time control using a PID-based autopilot, and an interactive GUI for visualization and tuning.
+A physics-based 2D flight simulator implementing longitudinal aircraft dynamics, real-time control using a PID-based autopilot, and an interactive GUI for visualization and tuning. Readme authored by Chatgpt and reviewed by Akram!
 
 ---
 
@@ -22,16 +22,25 @@ Defined in:
 
 **Core dynamics**
 
-* Lift: `(L = \frac{1}{2} \rho V^2 S C_L)`
-* Drag: `(D = \frac{1}{2} \rho V^2 S C_D)`
-* `(C_L = 2\pi \alpha)`  
-* `(C_D = C_{D0} + k \alpha^2)`
+- Lift:
+  L = 0.5 * rho * V^2 * S * C_L
+
+- Drag:
+  D = 0.5 * rho * V^2 * S * C_D
+
+- Lift coefficient:
+  C_L = 2π * alpha
+
+- Drag coefficient:
+  C_D = C_D0 + k * alpha^2
 
 **Equations of motion**
 
-* `(\dot{V} = \frac{T\cos\alpha - D - mg\sin\gamma}{m})`
-* `(\dot{\gamma} = \frac{L + T\sin\alpha - mg\cos\gamma}{mV})`
-* `(\dot{h} = V \sin\gamma)`
+- dV/dt = (T*cos(alpha) - D - m*g*sin(gamma)) / m
+
+- d(gamma)/dt = (L + T*sin(alpha) - m*g*cos(gamma)) / (m*V)
+
+- dh/dt = V*sin(gamma)
 
 **Numerical integration**
 
